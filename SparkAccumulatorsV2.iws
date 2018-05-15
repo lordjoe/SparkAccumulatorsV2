@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0727afb7-7761-4096-b33c-3c22783a1579" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/SparkAccumulators.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/algorithms/Long_Formatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/algorithms/MapOfLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingFlatMapFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingFunction1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingFunction2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingFunctionBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingMapFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingPairFlatMapFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingPairFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingReduceFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AccumulatorUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/BasicSparkAccumulators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/CountedItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/GCTimeAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/IAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/ISparkAccumulators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/LogRareEventsAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/LongAccumulableParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MachineUseAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MachineUseAccumulatorV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryAndBinSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulatorAndBinSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/SetAccumulableParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/StringAccumulableParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/StringSetAccumulableParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/testing/DatasetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/testing/ElapsedTimer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/testing/GarbageCollectionTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/testing/MemoryTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/testing/MyBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lordjoe/testing/MyUnBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lordjoe/distributed/spark/GenericSpark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lordjoe/distributed/spark/ScalaAdaptorsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lordjoe/distributed/spark/SparkTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lordjoe/distributed/spark/accumulators/MachineAcculumatorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lordjoe/testing/GarbageCollectorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lordjoe/testing/MemoryTrackerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/000000006774.mgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/000000006774.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/000000006774.peptide" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/000000008852.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/2Protein.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/CometAssignedBins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/SmallSampleProteins.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/UsedSpectraComet.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/eg0.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/eg3.out.PeaksOnlyAnimeshselectedMGF20.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/eg3PeaksOnlyTop20.mgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/eg3Scan7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/eg3_20.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/ego.mgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/egoParameters.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/10spectra_32.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/18ProteinMix.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/FragmentGeneratingTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/FullMapReduceTaxonomy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/FullMapReduceTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/FullMapReduceXTandemScoring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/OneSampleLog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/SmallNested.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/TestLauncher.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/TestLauncherLocal.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/XTandemCalculation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/bioml/TestBiomlFile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/default_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/fasta/GoodRuns.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/fasta/default_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/fasta/tandem.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/fasta/taxonomy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/fdr/TestPDR.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/gpm_default_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/gpm_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/hadoop/myoControl.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/input2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/input3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/isb_default_input_kscore.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/isb_default_input_native.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/Halobacterium-20080205_TargDecoy.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/Halobacterium-20080205_TargDecoyFound.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/LT20100217SCX4_FILTERED.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/default_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/log1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/output.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/parseError.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/tandem.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/tandem_database.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/tandem_database_large.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/tandem_database_medium.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/tandem_large.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/largeSample/taxonomy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mgf/7962salivaryglandhealthycontrol.mgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mgf/GoodRuns.mgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/myoControl.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/myoControlSmall.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/myoglobin.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mzml/10spectra_32.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mzml/10spectra_32x32.mzML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mzml/10spectra_64x32.mzML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mzml/10spectra_64x32z.mzML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mzml/10spectra_64z.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/mzml/2min.mzML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/sax/tiny1.mzML0.99.1.mzML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/small.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/default_input.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/myoControl.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/myoControlSmall.mzXML" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/myoglobin.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/or20080317_s_silac-lh_1-1_01short.mzxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/output.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/small.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/tandem.params" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/taxonomy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/smallSample/taxonomySmall.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/tandem_params.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/taxonomy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/taxonomy2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/taxonomy4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/taxonomySmall.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/test_spectra.mgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/testing/tandem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/testing/taxonomy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/testing/xtandem_output.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/testing/yeast_orfs_pruned.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/org/systemsbiology/xtandem/yeast_orfs_pruned.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/select_20.fasta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/war_and_peace.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/war_and_peace_counts.txt" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BasicSparkAccumulators.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/BasicSparkAccumulators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="36" column="107" selection-start-line="36" selection-start-column="107" selection-end-line="36" selection-end-column="107" />
+              <folding>
+                <element signature="e#2465#2473#0" expanded="true" />
+                <element signature="e#8327#8335#0" expanded="true" />
+                <element signature="e#8612#8620#0" expanded="true" />
+                <element signature="e#8902#8910#0" expanded="true" />
+                <element signature="e#9545#9546#0" expanded="true" />
+                <element signature="e#9597#9598#0" expanded="true" />
+                <element signature="e#11537#11538#0" expanded="true" />
+                <element signature="e#11581#11582#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemoryTrackerTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/lordjoe/testing/MemoryTrackerTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISparkAccumulators.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/ISparkAccumulators.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GCTimeAccumulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/GCTimeAccumulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="157" column="3" selection-start-line="157" selection-start-column="3" selection-end-line="157" selection-end-column="3" />
+              <folding>
+                <element signature="e#2824#2825#0" expanded="true" />
+                <element signature="e#2852#2853#0" expanded="true" />
+                <element signature="e#2919#2920#0" expanded="true" />
+                <element signature="e#2946#2947#0" expanded="true" />
+                <element signature="e#3105#3106#0" expanded="true" />
+                <element signature="e#3132#3133#0" expanded="true" />
+                <element signature="e#2943#2944#0" expanded="true" />
+                <element signature="e#2972#2973#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemoryUseAccumulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+              <folding>
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1507#1508#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1846#1847#0" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1894#1895#0" expanded="true" />
+                <element signature="e#2000#2001#0" expanded="true" />
+                <element signature="e#2033#2034#0" expanded="true" />
+                <element signature="e#1939#1940#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/lang/System.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="530" column="50" selection-start-line="528" selection-start-column="41" selection-end-line="530" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemoryUseAccumulatorAndBinSize.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulatorAndBinSize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-432">
+              <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+              <folding>
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+                <element signature="e#1289#1290#0" expanded="true" />
+                <element signature="e#1369#1370#0" expanded="true" />
+                <element signature="e#1396#1397#0" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1621#1622#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogRareEventsAccumulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/LogRareEventsAccumulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="72" column="68" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+              <folding>
+                <element signature="e#1623#1634#0" expanded="true" />
+                <element signature="e#1892#1893#0" expanded="true" />
+                <element signature="e#1968#1969#0" expanded="true" />
+                <element signature="e#1945#1946#0" expanded="true" />
+                <element signature="e#1973#1974#0" expanded="true" />
+                <element signature="e#2339#2340#0" expanded="true" />
+                <element signature="e#2383#2384#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IAccumulator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/IAccumulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AccumulatorV2&lt;Long,Long&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LongAccumulator</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="E:/gnubridge-master" value="1439222424717" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="E:/SpreadsheetTools" value="PREVIEW" />
+        <entry key="E:/google-maps-services-java-master" value="PREVIEW" />
+        <entry key="E:/pro-examples-java-master" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MachineUseAccumulatorV2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/IAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/IAccumulatorParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MachineUseAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/LogRareEventsAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulatorAndBinSize.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/ISparkAccumulators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/BasicSparkAccumulators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/GCTimeAccumulator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lordjoe/testing/MemoryTrackerTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="55" />
+    <option name="y" value="68" />
+    <option name="width" value="1830" />
+    <option name="height" value="1016" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lordjoe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lordjoe" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lordjoe" type="462c0819:PsiDirectoryNode" />
+              <item name="accumulators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SparkAccumulatorsV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SparkAccumulatorsV2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MemoryTrackerTests">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="All in SparkAccumulators" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SparkAccumulators" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MemoryTrackerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SparkAccumulators" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lordjoe.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lordjoe.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.lordjoe.testing.MemoryTrackerTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="visualVMId" value="86691712952693" />
+      </RunnerSettings>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in SparkAccumulators" />
+      <item itemvalue="JUnit.MemoryTrackerTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MemoryTrackerTests" />
+        <item itemvalue="JUnit.All in SparkAccumulators" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0727afb7-7761-4096-b33c-3c22783a1579" name="Default" comment="" />
+      <created>1524672979382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524672979382</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_SparkAccumulators - 2018.04.25 at 09h 18m 33s.xml">
+      <configuration name="All in SparkAccumulators" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemoryTrackerTests - 2018.04.25 at 09h 21m 42s.xml">
+      <configuration name="MemoryTrackerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemoryTrackerTests - 2018.04.25 at 09h 21m 56s.xml">
+      <configuration name="MemoryTrackerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemoryTrackerTests - 2018.04.25 at 09h 22m 44s.xml">
+      <configuration name="MemoryTrackerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemoryTrackerTests - 2018.04.25 at 09h 25m 18s.xml">
+      <configuration name="MemoryTrackerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemoryTrackerTests - 2018.04.25 at 09h 27m 57s.xml">
+      <configuration name="MemoryTrackerTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemoryTrackerTests - 2018.04.25 at 09h 29m 23s.xml">
+      <configuration name="MemoryTrackerTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="55" y="68" width="1830" height="1016" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="bottom" x="1956" y="342" width="1814" height="827" id="Debug" order="3" type="FLOATING" weight="0.39954597" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="SBT Console" />
+      <window_info anchor="bottom" id="Messages" weight="0.3291714" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Run with VisualVM" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972437" />
+      <window_info anchor="bottom" id="JProfiler" />
+      <window_info anchor="bottom" id="Panda Executor" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/lordjoe/testing/MemoryTrackerTests.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit-dep/4.10/junit-dep-4.10-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AbstractLoggingFlatMapFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/Accumulator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/LongAccumulableParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/AccumulatorUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/api/java/JavaSparkContext.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="621" column="6" selection-start-line="621" selection-start-column="6" selection-end-line="621" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/CountedItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryAndBinSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MachineUseAccumulatorV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="103" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="103" />
+          <folding>
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.3.0/spark-core_2.11-2.3.0-sources.jar!/org/apache/spark/util/AccumulatorV2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="478" column="73" selection-start-line="478" selection-start-column="60" selection-end-line="478" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/IAccumulatorParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+          <folding>
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MachineUseAccumulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
+            <element signature="e#2017#2018#0" expanded="true" />
+            <element signature="e#3542#3543#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
+            <element signature="e#4044#4045#0" expanded="true" />
+            <element signature="e#4076#4077#0" expanded="true" />
+            <element signature="e#4102#4103#0" expanded="true" />
+            <element signature="e#4137#4138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/LogRareEventsAccumulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="72" column="68" selection-start-line="72" selection-start-column="68" selection-end-line="72" selection-end-column="68" />
+          <folding>
+            <element signature="e#1623#1634#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1968#1969#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2383#2384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="530" column="50" selection-start-line="528" selection-start-column="41" selection-end-line="530" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+          <folding>
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1846#1847#0" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1894#1895#0" expanded="true" />
+            <element signature="e#2000#2001#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+            <element signature="e#1939#1940#0" expanded="true" />
+            <element signature="e#1971#1972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/MemoryUseAccumulatorAndBinSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+          <folding>
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+            <element signature="e#1289#1290#0" expanded="true" />
+            <element signature="e#1369#1370#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/ISparkAccumulators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/IAccumulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/GCTimeAccumulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="157" column="3" selection-start-line="157" selection-start-column="3" selection-end-line="157" selection-end-column="3" />
+          <folding>
+            <element signature="e#2824#2825#0" expanded="true" />
+            <element signature="e#2852#2853#0" expanded="true" />
+            <element signature="e#2919#2920#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#3105#3106#0" expanded="true" />
+            <element signature="e#3132#3133#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+            <element signature="e#2972#2973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lordjoe/distributed/spark/accumulators/BasicSparkAccumulators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="36" column="107" selection-start-line="36" selection-start-column="107" selection-end-line="36" selection-end-column="107" />
+          <folding>
+            <element signature="e#2465#2473#0" expanded="true" />
+            <element signature="e#8327#8335#0" expanded="true" />
+            <element signature="e#8612#8620#0" expanded="true" />
+            <element signature="e#8902#8910#0" expanded="true" />
+            <element signature="e#9545#9546#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#11537#11538#0" expanded="true" />
+            <element signature="e#11581#11582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lordjoe/testing/MemoryTrackerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>ECLIPSE</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SparkAccumulators</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.carrotsearch:hppc:0.7.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

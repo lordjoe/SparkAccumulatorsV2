@@ -1,0 +1,3 @@
+/target/classes/com/lordjoe/algorithms/*.class
+/target/classes/com/lordjoe/distributed/spark/accumulators/*.class
+*.class
