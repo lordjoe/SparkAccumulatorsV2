@@ -66,8 +66,7 @@ public class MemoryUseAccumulatorAndBinSize extends IAccumulator<MemoryUseAccumu
     }
 
     @Override
-
-    public void merge(AccumulatorV2<MemoryUseAccumulatorAndBinSize, MemoryUseAccumulatorAndBinSize> other) {
+       public void merge(AccumulatorV2<MemoryUseAccumulatorAndBinSize, MemoryUseAccumulatorAndBinSize> other) {
         MemoryUseAccumulatorAndBinSize copy = (MemoryUseAccumulatorAndBinSize)other.value() ;
         add(copy);
     }

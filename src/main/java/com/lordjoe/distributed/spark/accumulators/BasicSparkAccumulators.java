@@ -60,7 +60,7 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
     // not sure what these are used for but thay are allowed
     private final Map<String, AccumulatorV2> specialaccumulators = new HashMap<>();
     //    private Accumulator<Set<String>> machines;
-    private transient Set<String> deliveredMessages = new HashSet<String>();
+    private transient Set<String> deliveredMessagesX = new HashSet<String>();
 
     /**
      * append lines for all accumulators to an appendable
@@ -259,6 +259,12 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
         return accumulators.containsKey(acc);
     }
 
+    private Set<String>  getDeliveredMessages() {
+        if(deliveredMessagesX == null)
+         deliveredMessagesX = new HashSet<String>();
+        return deliveredMessagesX;
+
+    }
     /**
      * @param acc name of am existing accumulator
      * @return !null existing accumulator
@@ -267,9 +273,9 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
         LongAccumulator ret = accumulators.get(acc);
         if (ret == null) {
             String message = "Accumulators need to be created in advance in the executor - cannot get " + acc;
-            if (!deliveredMessages.contains(message)) {
+            if (!getDeliveredMessages().contains(message)) {
                 System.err.println(message);
-                deliveredMessages.add(message);
+                getDeliveredMessages().add(message);
             }
         }
         return ret;
@@ -284,9 +290,9 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
         MachineUseAccumulator ret = functionaccumulators.get(acc);
         if (ret == null) {
             String message = "Function Accumulators need to be created in advance in the executor - cannot get " + acc;
-            if (!deliveredMessages.contains(message)) {
+            if (!getDeliveredMessages().contains(message)) {
                 System.err.println(message);
-                deliveredMessages.add(message);
+                getDeliveredMessages().add(message);
             }
         }
         return ret;
@@ -301,9 +307,9 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
         AccumulatorV2 ret = specialaccumulators.get(acc);
         if (ret == null) {
             String message = "Special Accumulators need to be created in advance in the executor - cannot get " + acc;
-            if (!deliveredMessages.contains(message)) {
+            if (!getDeliveredMessages().contains(message)) {
                 System.err.println(message);
-                deliveredMessages.add(message);
+                getDeliveredMessages().add(message);
             }
         }
         return ret;
