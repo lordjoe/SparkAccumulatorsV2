@@ -21,6 +21,11 @@ public class WordCountCaller {
 
     }
 
+    /**
+     * testing that all references classes are available
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         loadClass("org.apache.spark.Accumulator");
         loadClass("org.apache.spark.AccumulatorParam");

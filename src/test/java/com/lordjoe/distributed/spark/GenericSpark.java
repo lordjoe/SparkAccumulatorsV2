@@ -1,10 +1,13 @@
 package com.lordjoe.distributed.spark;
 
-import org.apache.spark.*;
-import org.apache.spark.api.java.*;
-import scala.*;
 
-import java.util.*;
+import scala.Option;
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * com.lordjoe.distributed.spark.GenericSpark

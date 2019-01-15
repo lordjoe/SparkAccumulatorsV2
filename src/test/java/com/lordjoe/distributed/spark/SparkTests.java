@@ -2,6 +2,7 @@ package com.lordjoe.distributed.spark;
 
 import org.junit.*;
 
+
 /**
  * com.lordjoe.distributed.spark.SparkTests
  * User: Steve

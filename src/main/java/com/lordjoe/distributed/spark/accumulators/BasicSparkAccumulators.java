@@ -21,8 +21,7 @@ import java.util.*;
  */
 public class BasicSparkAccumulators implements ISparkAccumulators {
 
-    public static final String MEMORY_ACCUMULATOR_NAME = "MemoryUsage";
-
+  
     public static final int MAX_TRACKED_THREADS = 10;
 
 
@@ -33,9 +32,9 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
             AccumulatorUtilities.setInstance(me);
         }
 
-        me.createSpecialAccumulator(MEMORY_ACCUMULATOR_NAME,   MemoryUseAccumulator.empty());
+        me.createSpecialAccumulator(MemoryUseAccumulator.MEMORY_ACCUMULATOR_NAME,   MemoryUseAccumulator.empty());
         me.createSpecialAccumulator(LogRareEventsAccumulator.LOG_RARE_EVENTS_NAME,  LogRareEventsAccumulator.empty());
-        me.createSpecialAccumulator(MEMORY_ACCUMULATOR_NAME,   MemoryUseAccumulator.empty());
+        me.createSpecialAccumulator(MemoryUseAccumulatorAndBinSize.BIN_ACCUMULATOR_NAME,   MemoryUseAccumulatorAndBinSize.empty());
         me.createSpecialAccumulator(GCTimeAccumulator.GCTIME_ACCUMULATOR_NAME, GCTimeAccumulator.empty());
 
 //        for (int i = 0; i < MAX_TRACKED_THREADS; i++) {
@@ -101,11 +100,18 @@ public class BasicSparkAccumulators implements ISparkAccumulators {
         MachineUseAccumulator totalCalls = MachineUseAccumulator.empty();
         List<String> functionAccumulatorNames = pMe.getFunctionAccumulatorNames();
         for (String accumulatorName : functionAccumulatorNames) {
-            AccumulatorV2<MachineUseAccumulator, MachineUseAccumulator> accumulator = pMe.getFunctionAccumulator(accumulatorName);
-            MachineUseAccumulator value = accumulator.value();
-            totalCalls.add(value);
-            //noinspection StringConcatenationInsideStringBufferAppend
-            out.append(accumulatorName + " " + value + "\n");
+
+            try {
+                AccumulatorV2<MachineUseAccumulator, MachineUseAccumulator> accumulator = pMe.getFunctionAccumulator(accumulatorName);
+                MachineUseAccumulator value = accumulator.value();
+                if(value != null)
+                     totalCalls.add(value);
+                //noinspection StringConcatenationInsideStringBufferAppend
+                out.append(accumulatorName + " " + value + "\n");
+            } catch (Exception e) {
+                System.out.println("Exception Thrown on " + accumulatorName);
+
+            }
         }
         return totalCalls;
     }
