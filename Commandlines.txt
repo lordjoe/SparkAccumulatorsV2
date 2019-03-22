@@ -1,0 +1,1 @@
+%SPARK_HOME%\bin\spark-submit.cmd --class com.lordjoe.testing.ExampleWordCount file://SparkAccumulatorsV2/out/artifacts/SparkAccumulators_jar SparkAccumulators_jar file://SparkAccumulatorsV2/data/Moby.txt
